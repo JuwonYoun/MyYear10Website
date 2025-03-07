@@ -1,0 +1,181 @@
+/* A simple css reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 120%;
+    /* The Font Family- Really important!! */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(48, 37, 206);
+}
+
+/* Styling for h2 text */
+.image-creation-content h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 0;
+    margin: 20px auto;
+    width: fit-content;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.image-creation-content h2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+}
+
+p{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    color: gainsboro
+    
+}
+
+/* reset for images to ensure they ar 100% of the parent container width */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* The hero section styling- use your OWN Hero Image URL here */
+.hero {
+    background-image: url('images/DGT portpolio.png');
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* BIG text styling for the hero section text */
+.hero-text {
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 
+        -3px -3px 0 black,  
+         3px -3px 0 black,
+        -3px  3px 0 black,
+         3px  3px 0 black;
+}
+
+/* nice big font on a banner style background */
+.topic-title{
+    color: white;
+    font-size: 2em;
+    padding: 0.1em 3em;
+    background-color: rgb(23, 17, 75);
+    text-align: center;
+}
+
+/* Three column grid with a nice big gap */
+.topic-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6em;
+    /* bring the whole section in off the sides of the page */
+    width: 70%;
+    /* top margin of 3em and center right/left */
+    margin: 3em auto;
+}
+
+/* Styling for the individual topic cards rounded edges background color and a drop shadow */
+.topic-card{
+    background-color: rgb(190, 185, 255);
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.1em;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Styling for the topic card titles */
+.topic-card-text{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    /* center align text */
+    text-align: center;
+}
+
+
+/* Styling for a footer section to take a bit of spcae at the bottom of the page */
+.footer{
+    background-color: rgb(23, 17, 75);
+    color: white;
+    text-align: right;
+    padding: 3em 3em;
+    font-size: x-small;
+}
+/* navigation bar style */
+.navbar {
+    background-color: #1E3A56; /* navigation bar background color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* navigation menu list */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* navigation item style */
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* navigation link style */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+/* navigation link hover effect */
+.navbar ul li a:hover {
+    background-color: #3e5b77;
+}
+/* Custom styling for Image Creation cards */
+.image-creation-content .topic-card {
+    background-color: transparent;
+    padding: 1em;
+    border-radius: 0;
+    border: 7px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.image-creation-content .topic-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Image styling */
+.image-creation-content .topic-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    object-fit: cover;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
