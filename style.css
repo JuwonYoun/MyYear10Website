@@ -74,7 +74,7 @@ img {
          3px  3px 0 black;
 }
 
-/* nice big font on a banner style background */
+/* big font on a banner style background */
 .topic-title{
     color: white;
     font-size: 2em;
@@ -94,7 +94,7 @@ img {
     margin: 3em auto;
 }
 
-/* Styling for the individual topic cards rounded edges background color and a drop shadow */
+/* topic cards*/
 .topic-card{
     background-color: rgb(190, 185, 255);
     color: white;
@@ -103,7 +103,7 @@ img {
     box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Styling for the topic card titles */
+/* topic card titles */
 .topic-card-text{
     font-size: 1.5em;
     margin-bottom: 0.5em;
@@ -112,7 +112,7 @@ img {
 }
 
 
-/* Styling for a footer section to take a bit of spcae at the bottom of the page */
+/* footer */
 .footer{
     background-color: rgb(23, 17, 75);
     color: white;
@@ -155,7 +155,7 @@ img {
 .navbar ul li a:hover {
     background-color: #3e5b77;
 }
-/* Custom styling for Image Creation cards */
+/*Image Creation cards */
 .image-creation-content .topic-card {
     background-color: transparent;
     padding: 1em;
