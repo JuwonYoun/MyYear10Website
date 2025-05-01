@@ -7,40 +7,39 @@ html {
     /* The Font Family- Really important!! */
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-    background-color: rgb(48, 37, 206);
+    background-color: #2C3E50; /* Changed to a softer blue-gray */
 }
 
 /* Styling for h2 text */
 .image-creation-content h2 {
     font-size: 2em;
     font-weight: bold;
-    color: white;
+    color: #ECF0F1; /* Lighter color for better contrast */
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 15px 0;
     margin: 20px auto;
     width: fit-content;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-    border-top: 3px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to right, rgba(236, 240, 241, 0.2), rgba(236, 240, 241, 0));
+    border-top: 3px solid rgba(236, 240, 241, 0.5);
+    border-bottom: 3px solid rgba(236, 240, 241, 0.5);
+    box-shadow: 0px 4px 10px rgba(236, 240, 241, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover effect */
 .image-creation-content h2:hover {
     transform: translateY(-3px);
-    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+    box-shadow: 0px 6px 15px rgba(236, 240, 241, 0.4);
+    background: linear-gradient(to right, rgba(236, 240, 241, 0.4), rgba(236, 240, 241, 0));
 }
 
-p{
+p {
     text-align: center;
     font-size: medium;
     font-weight: bold;
-    color: gainsboro
-    
+    color: #BDC3C7; /* Softer gray color */
 }
 
 /* reset for images to ensure they ar 100% of the parent container width */
@@ -75,54 +74,53 @@ img {
 }
 
 /* big font on a banner style background */
-.topic-title{
-    color: white;
+.topic-title {
+    color: #ECF0F1;
     font-size: 2em;
     padding: 0.1em 3em;
-    background-color: rgb(23, 17, 75);
+    background-color: #34495E; /* Darker blue-gray */
     text-align: center;
 }
 
 /* Three column grid with a nice big gap */
-.topic-content{
+.topic-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6em;
-    /* bring the whole section in off the sides of the page */
     width: 70%;
-    /* top margin of 3em and center right/left */
     margin: 3em auto;
 }
 
 /* topic cards*/
-.topic-card{
-    background-color: rgb(190, 185, 255);
-    color: white;
+.topic-card {
+    background-color: #34495E; /* Matching the topic-title background */
+    color: #ECF0F1;
     padding: 0.5em;
-    border-radius: 0.1em;
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
+    border-radius: 0.5em; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* topic card titles */
-.topic-card-text{
+.topic-card-text {
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    /* center align text */
     text-align: center;
+    color: #ECF0F1;
 }
 
-
 /* footer */
-.footer{
-    background-color: rgb(23, 17, 75);
-    color: white;
+.footer {
+    background-color: #34495E; /* Matching the topic-title background */
+    color: #ECF0F1;
     text-align: right;
     padding: 3em 3em;
     font-size: x-small;
 }
+
 /* navigation bar style */
 .navbar {
-    background-color: #1E3A56; /* navigation bar background color */
+    background-color: #34495E; /* Matching the topic-title background */
     padding: 10px 0;
     text-align: center;
 }
@@ -142,7 +140,7 @@ img {
 
 /* navigation link style */
 .navbar ul li a {
-    color: white;
+    color: #ECF0F1;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
@@ -153,29 +151,31 @@ img {
 
 /* navigation link hover effect */
 .navbar ul li a:hover {
-    background-color: #3e5b77;
+    background-color: #2C3E50; /* Slightly lighter than the main background */
 }
+
 /*Image Creation cards */
 .image-creation-content .topic-card {
     background-color: transparent;
     padding: 1em;
-    border-radius: 0;
-    border: 7px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    border-radius: 0.5em;
+    border: 3px solid rgba(236, 240, 241, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover effect */
 .image-creation-content .topic-card:hover {
     transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    border-color: rgba(236, 240, 241, 0.5);
 }
 
 /* Image styling */
 .image-creation-content .topic-card img {
     width: 100%;
     height: auto;
-    border-radius: 0;
+    border-radius: 0.3em;
     object-fit: cover;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(236, 240, 241, 0.3);
 }
-
